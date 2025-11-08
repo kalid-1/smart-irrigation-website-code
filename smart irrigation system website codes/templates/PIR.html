@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion detection</title>
+    <link rel="stylesheet" href="static/sensors.css">
+</head>
+<body>
+    <div class="container"> 
+        <h1> Motion Detector</h1>
+        <div class="sensor_reading">
+            <div class="thumbnail_container">
+                <img class="thumbnail" src="static/thumbnails/motion.png" alt="">
+            </div>
+            <br>
+            Motion detector: {{PIR_reading}}
+            <br>
+        </div>
+        <div class="graph">
+            
+            <h1>Graph of Motion Detection </h1>
+            <h2 style="color: antiquewhite;">1 : No motion detected</h2>
+            <h2 style="color: antiquewhite;">2 : Motion detected</h2>
+            <img src="data:image/png;base64,{{ GRAPH_IMAGE_STRING }}" />
+            
+        </div>
+    </div>
+</body>
+</html>

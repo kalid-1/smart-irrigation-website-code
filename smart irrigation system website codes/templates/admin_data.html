@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5">
+    <title>ADMIN PAGE</title>
+    <link rel="stylesheet" href="static/sensors.css">
+    <style>
+        h1{
+            background-color: rgba(230, 249, 202, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 > Temperature Sensor</h1>
+        <div class="sensor_reading">
+            
+            <div class="thumbnail_container">
+                <img class="thumbnail" src="static/thumbnails/temperature.png" alt="">
+            </div>
+            <br>
+            Temperature: {{Temp_reading}}°C
+            <br>
+        </div>
+        <div class="graph">
+            <h1>Graph of Temperature readings</h1>
+            <img src="data:image/png;base64,{{ TGD }}" />
+            
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <h1> Soil Humidity Sensor</h1>
+        <div class="sensor_reading">
+            <div class="thumbnail_container">
+                <img class="thumbnail" src="static/thumbnails/humidity.png" alt="">
+            </div>
+            <br>
+            Soil Moisture {{Moisture_reading}}%
+            <br>
+        </div>
+        <div class="graph">
+            <h1>Graph of soil Humidity</h1>
+            <img src="data:image/png;base64,{{ MGD }}" />
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <h1> Light Intensity Sensor: Zone 1</h1>
+        <div class="sensor_reading">
+            <div class="thumbnail_container">
+                <img class="thumbnail" src="static/thumbnails/light_intensity.png" alt="">
+            </div>
+
+            <br>
+            Zone 1 Light Intensity: {{LDR1_reading}}%
+            <br>
+
+        </div>
+        <div class="graph">
+            <h1>Graph of Light Intensity</h1>
+            <img src="data:image/png;base64,{{ LGD1 }}" />
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <h1> Light Intensity Sensor: Zone 2</h1>
+        <div class="sensor_reading">
+            <div class="thumbnail_container">
+                <img class="thumbnail" src="static/thumbnails/light_intensity.png">
+            </div>
+            <br>
+            Zone 2 Light Intensity: {{LDR2_reading}}%
+            <br>
+        </div>
+        <div class="graph">
+            <h1>Graph of Light Intensity</h1>
+            <img src="data:image/png;base64,{{ LGD2 }}" />
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <div class="container"> 
+        <h1> Motion Detector</h1>
+        <div class="sensor_reading">
+            <div class="thumbnail_container">
+                <img class="thumbnail" src="static/thumbnails/motion.png" alt="">
+            </div>
+            <br>
+            Motion detector: {{PIR_reading}}
+            <br>
+        </div>
+        <div class="graph">
+            
+            <h1>Graph of Motion Detection </h1>
+            <h2 style="color: antiquewhite;">1 : No motion detected</h2>
+            <h2 style="color: antiquewhite;">2 : Motion detected</h2>
+            <img src="data:image/png;base64,{{ PGD }}" />
+            
+        </div>
+    </div>
+    
+</body>
+</html>

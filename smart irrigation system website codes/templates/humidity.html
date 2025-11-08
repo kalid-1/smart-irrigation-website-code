@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Humidity</title>
+    <link rel="stylesheet" href="static/sensors.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Soil Humidity Sensor</h1>
+        <div class="sensor_reading">
+            <div class="thumbnail_container">
+                <img class="thumbnail" src="static/thumbnails/humidity.png" alt="">
+            </div>
+            <br>
+            Soil Moisture {{Moisture_reading}}%
+            <br>
+        </div>
+        <div class="graph">
+            <h1>Graph of soil Humidity</h1>
+            <img src="data:image/png;base64,{{ GRAPH_IMAGE_STRING }}" />
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{%extends "base.html"%}
+
+{%block title%}Zone 1 light intensity{%endblock%}
+
+{%block content%}
+    <div class="container">
+        <div class="forms">
+            <br>
+            <h1 style="text-align: center;">Add user</h1>
+            <br>
+            <form class="form" action="" method="POST">
+                <br><label for="">Username: </label>
+                <input type="text" required class="usName" name="username" id="us_name" placeholder="Enter your username">
+                <br><br><br>
+                <label for="">password: </label>
+                <input type="password" required class="usPassword" name="password" id="us_password" placeholder="Enter your password">
+                <br><br><br>
+                <label for="">Temperature </label>
+                <input type="radio"  name="sensor_type" id="" value="temperature">
+                <label for="">  Soil Moisture </label>
+                <input type="radio" name="sensor_type" id="" value="moisture">
+                <label for="">  Motion detector </label>
+                <input type="radio" name="sensor_type" id="" value="motion"><br><br>
+                <label for="">Zone 1 Light intensity </label>
+                <input type="radio" name="sensor_type" id="" value="ldr1">
+                <label for="">  Zone 2 Light intensity </label>
+                <input type="radio" name="sensor_type" id="" value="ldr2">
+                <br><br>
+                <button id="submit" type="submit">Create user</button>
+                <br><br>
+                {{error}}
+            </form>
+
+            
+        </div>
+    </div>
+    {%endblock%}

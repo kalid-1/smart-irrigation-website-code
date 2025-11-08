@@ -1,0 +1,57 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html{
+    min-height: 100%;
+}
+
+body{
+    height: 100vh;
+    background-color: aliceblue;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    background-attachment: fixed;
+}
+
+.form{
+    background-color: rgba(235, 241, 241,0.9);
+    height: 300px;
+    width: 500px;
+    justify-self: center;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+nav {
+    position: fixed;
+    
+    background-color: rgba(248, 248, 248, 0.737);
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    height: 100%;
+    justify-content: center;
+    
+
+}
+
+#content{
+    
+    background-color: rgb(21, 242, 69);
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5px;
+    align-items: center;
+    
+}
+

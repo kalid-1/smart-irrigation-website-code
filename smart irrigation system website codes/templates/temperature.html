@@ -1,0 +1,30 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5">
+    <title>Temperature sensor</title>
+    <link rel="stylesheet" href="static/sensors.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Temperature Sensor</h1>
+        <div class="sensor_reading">
+            
+            <div class="thumbnail_container">
+                <img class="thumbnail" src="static/thumbnails/temperature.png" alt="">
+            </div>
+            <br>
+            Temperature: {{Temp_reading}}°C
+            <br>
+        </div>
+        <div class="graph">
+            <h1>Graph of Temperature readings</h1>
+            <img src="data:image/png;base64,{{ GRAPH_IMAGE_STRING }}" />
+            
+        </div>
+    </div>
+</body>
+</html>

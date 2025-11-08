@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/base.css">
+    <title>{%block title%}base{%endblock%}</title>
+    
+</head>
+
+<body >
+
+
+    <nav class="sidebar">
+        <div class="sidebar_container" >
+
+            <div class="ADMIN" id="content">
+                <a href="/admin">admin</a>
+            </div>
+
+            <div class="TEMP" id="content">
+                <a href="/login_temp">Temperature</a>
+            </div>
+
+            <div class="MOISTURE" id="content">
+                <a href="/login_moisture">Moisture</a>
+            </div>
+
+            <div class="LDR_1 "id="content">
+                <a href="/login_ldr1">Light intensity zone 1</a>
+            </div>
+
+            <div class="LDR_2" id="content">
+                <a href="/login_ldr2">Light intensity zone 2</a>
+            </div>
+
+            <div class="MOTION" id="content">
+                <a href="/login_motion"> MOTION</a>
+            </div>
+
+            <div class="ADD_USER" id="content">
+                <a href="/add_user">Add user</a>
+            </div>
+
+            <div class="ADD_USER" id="content">
+                <a href="/delete_user">Delete user</a>
+            </div>
+            
+        </div>
+    </nav>
+
+    <br>
+    {%block content%} {%endblock%}
+</body>
+</html>

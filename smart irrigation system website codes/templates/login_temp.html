@@ -1,0 +1,27 @@
+{%extends "base.html"%}
+
+{%block title%}Temperature{%endblock%}
+
+{%block content%}
+
+    <div class="container">
+        <div class="forms">
+            <h1 style="text-align: center;">login page</h1>
+            <form class="form" action="" method="POST">
+                <br><br>
+                <label for="">Username: </label> 
+                <input  type="text" class="usName" name="username" id="us_name" placeholder="Enter your username" required>
+                <br><br><br><br>
+                <label for="">password: </label>
+                <input type="password" class="usPassword" name="password" id="us_password" placeholder="Enter your password" required>
+                <br><br><br><br>
+                <button id="submit" type="submit">Submit</button>
+                <br>
+                <br>
+                {{error}}
+            </form>
+            
+        </div>
+    </div>
+
+{%endblock%}

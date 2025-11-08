@@ -1,0 +1,28 @@
+{%extends "base.html"%}
+
+{%block title%}Delete user{%endblock%}
+
+{%block content%}
+
+
+    <div class="container">
+        <div class="forms">
+            <h1 style="text-align: center;">Delete user</h1>
+            <form class="form" action="" method="POST">
+                <br><br>
+                <label for="">Username: </label> 
+                <input type="text" required class="usName" name="username" id="us_name" placeholder="Enter username">
+                <br><br><br><br>
+                <label for="">password: </label>
+                <input type="password" required class="usPassword" name="password" id="us_password" placeholder="Enter admin password">
+                <br><br><br><br>
+                <button id="submit" type="submit">Submit</button>
+                <br>
+                <br>
+                {{error}}
+            </form>
+            
+        </div>
+    </div>
+
+{%endblock%}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Intensity 2</title>
+    <link rel="stylesheet" href="static/sensors.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Light Intensity Sensor: Zone 2</h1>
+        <div class="sensor_reading">
+            <div class="thumbnail_container">
+                <img class="thumbnail" src="static/thumbnails/light_intensity.png">
+            </div>
+            <br>
+            Zone 2 Light Intensity: {{LDR2_reading}}%
+            <br>
+        </div>
+        <div class="graph">
+            <h1>Graph of Light Intensity</h1>
+            <img src="data:image/png;base64,{{ GRAPH_IMAGE_STRING }}" />
+        </div>
+    </div>
+</body>
+</html>
